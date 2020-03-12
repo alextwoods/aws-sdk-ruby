@@ -14,9 +14,13 @@ jobs:
         env:
           STEPS_CONTEXT: ${{ toJson(steps) }}
           FILES_MODIFIED: ${{ steps.file_changes.outputs.files_modified }}
+        run: echo "$STEPS_CONTEXT"
 
       - name: detect change scope
         uses: actions/github-script@0.8.0
+        env:
+          STEPS_CONTEXT: ${{ toJson(steps) }}
+          FILES_ADDED: ${{ steps.file_changes.outputs.files_added }}
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
