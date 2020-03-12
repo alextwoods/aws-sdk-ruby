@@ -10,9 +10,9 @@ jobs:
 
     - name: Analyze and validate changes
       id: hello
-      uses: alextwoods/changelog-action@v1.1
+      uses: alextwoods/changelog-action@master
       with:
-        who-to-greet: 'Mona the Octocat'
+        who-to-greet: 'Rubyist'
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
