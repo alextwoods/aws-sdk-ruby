@@ -15,8 +15,7 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            console.log(context.steps.file_changes.outputs.files)
-            console.log(context.steps.file_changes.outputs.files_modified)
+            console.log(context)
             const diff_url = context.payload.pull_request.diff_url
             const result = await github.request(diff_url)
             console.log(result)
