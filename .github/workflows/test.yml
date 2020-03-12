@@ -12,7 +12,7 @@ jobs:
       id: hello
       uses: alextwoods/changelog-action@master
       with:
-        who-to-greet: 'Rubyist5'
+        who-to-greet: 'Rubyist6'
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
