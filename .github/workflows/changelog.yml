@@ -10,6 +10,11 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Dump steps context
+        env:
+          STEPS_CONTEXT: ${{ toJson(steps) }}
+          FILES_MODIFIED: ${{ steps.file_changes.outputs.files_modified }}
+
       - name: detect change scope
         uses: actions/github-script@0.8.0
         with:
