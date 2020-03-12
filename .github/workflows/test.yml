@@ -10,7 +10,7 @@ jobs:
 
     - name: Analyze and validate changes
       id: hello
-      uses: alextwoods/changelog-action@master
+      uses: alextwoods/changelog-action@v1.1
       with:
         who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
