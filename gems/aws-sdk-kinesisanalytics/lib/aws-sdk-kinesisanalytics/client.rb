@@ -42,6 +42,7 @@ module Aws::KinesisAnalytics
   # the [developer guide](/sdk-for-ruby/v3/developer-guide/setup-config.html).
   #
   # See {#initialize} for a full list of supported configuration options.
+  # SOME CHANGE!
   class Client < Seahorse::Client::Base
 
     include Aws::ClientStubs
