@@ -10,14 +10,19 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: test
-        run: |
-          echo '${{ steps.file_changes.outputs.files}}'
-          echo '${{ steps.file_changes.outputs.files_modified}}'
-          echo '${{ steps.file_changes.outputs.files_added}}'
-          echo '${{ steps.file_changes.outputs.files_deleted}}'
+      - name: detect change scope
+        uses: actions/github-script@0.8.0
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            console.log(context.steps.file_changes.outputs.files)
+            console.log(context.steps.file_changes.outputs.files_modified)
+            const diff_url = context.payload.pull_request.diff_url
+            const result = await github.request(diff_url)
+            console.log(result)
+            return {buildtool: true, coregem: true}
 
-      - name: Comment PR with dynamic message
+      - name: Comment on build tools change log
         uses: thollander/actions-comment-pull-request@master
         with:
           message: 'Consider adding a changelog entry'
