@@ -27,11 +27,5 @@ jobs:
             const diff_url = context.payload.pull_request.diff_url
             return {buildtool: true, coregem: true}
 
-      - name: Get the output time
+      - name: Output the scope
         run: echo "The time was ${{ steps.change_scope.outputs.result }}"
-
-      - name: Comment on build tools change log
-        uses: thollander/actions-comment-pull-request@master
-        with:
-          message: 'Consider adding a changelog entry'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
