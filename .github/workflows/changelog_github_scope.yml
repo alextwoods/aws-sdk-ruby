@@ -2,7 +2,8 @@ on:
   pull_request:
     paths:
     - 'gems/aws-sdk-core/**/*.rb'
-    - '!gems/aws-sdk-core/CHANGELOG.md'
+    paths-ignore:
+    - 'gems/aws-sdk-core/CHANGELOG.md'
 
 jobs:
   changelog_comment_pr:
