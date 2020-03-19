@@ -1,0 +1,15 @@
+on:
+  pull_request:
+    paths:
+      - 'gems/aws-sdk-core/**/*.rb'
+
+jobs:
+  changelog_comment_pr:
+    runs-on: ubuntu-latest
+    name: Comment on Changelog requires
+    steps:
+      - name: Comment PR with dynamic message
+        uses: thollander/actions-comment-pull-request@master
+        with:
+          message: 'Consider adding a changelog entry'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

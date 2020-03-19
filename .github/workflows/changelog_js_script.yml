@@ -25,7 +25,9 @@ jobs:
             console.log("----------------")
             console.log(JSON.parse(process.env.FILES_ADDED))
             const diff_url = context.payload.pull_request.diff_url
+            # use the octokit git client to make comments
+            # or return an object and use ifs to control commenting
             return {buildtool: true, coregem: true}
 
       - name: Output the scope
-        run: echo "The time was ${{ steps.change_scope.outputs.result }}"
+        run: echo "Scope of change was ${{ steps.change_scope.outputs.result }}"
