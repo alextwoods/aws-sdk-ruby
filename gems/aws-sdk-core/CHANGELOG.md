@@ -1,8 +1,6 @@
 Unreleased Changes
 ------------------
 
-* Issue - Update STS region default
-
 3.91.1 (2020-03-10)
 ------------------
 
