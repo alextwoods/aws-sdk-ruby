@@ -1,6 +1,11 @@
 Unreleased Changes
 ------------------
 
+1.423.0 (2021-02-03)
+------------------
+
+* Feature - Added support for enumerating regions for `Aws::TrebuchetTest`.
+
 1.422.0 (2021-01-29)
 ------------------
 

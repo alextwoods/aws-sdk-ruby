@@ -400,6 +400,7 @@ RubyGems.org page under "LINKS" section.
 | AWS Storage Gateway                                   | Aws::StorageGateway                  | aws-sdk-storagegateway                  | 2013-06-30  |
 | AWS Support                                           | Aws::Support                         | aws-sdk-support                         | 2013-04-15  |
 | AWS Transfer Family                                   | Aws::Transfer                        | aws-sdk-transfer                        | 2018-11-05  |
+| AWS TrebuchetTest                                     | Aws::TrebuchetTest                   | aws-sdk-trebuchettest                   | 2019-02-07  |
 | AWS WAF                                               | Aws::WAF                             | aws-sdk-waf                             | 2015-08-24  |
 | AWS WAF Regional                                      | Aws::WAFRegional                     | aws-sdk-wafregional                     | 2016-11-28  |
 | AWS WAFV2                                             | Aws::WAFV2                           | aws-sdk-wafv2                           | 2019-07-29  |

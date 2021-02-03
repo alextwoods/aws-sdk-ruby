@@ -255,6 +255,7 @@ module Aws
   autoload :TranscribeStreamingService, 'aws-sdk-transcribestreamingservice'
   autoload :Transfer, 'aws-sdk-transfer'
   autoload :Translate, 'aws-sdk-translate'
+  autoload :TrebuchetTest, 'aws-sdk-trebuchettest'
   autoload :WAF, 'aws-sdk-waf'
   autoload :WAFRegional, 'aws-sdk-wafregional'
   autoload :WAFV2, 'aws-sdk-wafv2'
