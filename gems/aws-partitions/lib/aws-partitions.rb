@@ -472,6 +472,7 @@ module Aws
             'TranscribeStreamingService' => 'transcribestreaming',
             'Transfer' => 'transfer',
             'Translate' => 'translate',
+            'TrebuchetTest' => 'trebuchettest',
             'WAF' => 'waf',
             'WAFRegional' => 'waf-regional',
             'WAFV2' => 'wafv2',

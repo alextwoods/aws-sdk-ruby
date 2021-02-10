@@ -1,6 +1,11 @@
 Unreleased Changes
 ------------------
 
+3.95.0 (2021-02-03)
+------------------
+
+* Feature - Added a dependency on the new `aws-sdk-trebuchettest` gem.
+
 3.94.0 (2021-01-22)
 ------------------
 
