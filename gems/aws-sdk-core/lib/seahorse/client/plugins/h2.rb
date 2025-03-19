@@ -55,7 +55,7 @@ When `true`, HTTP2 debug output will be sent to the `:logger`.
 
         option(:enable_alpn, default: true, doc_type: 'Boolean', docstring: <<-DOCS)
 Set to `false` to disable ALPN in HTTP2 over TLS. ALPN requires Openssl version >= 1.0.2.
-Defaults to true. Note: RFC7540 requires HTTP2 to use ALPN over TLS but some
+Note: RFC7540 requires HTTP2 to use ALPN over TLS but some
 services may not fully support ALPN and require setting this to `false`.
         DOCS
 
